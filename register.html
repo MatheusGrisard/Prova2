@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>TechZone | Cadastro</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <div class="container-header">
+        <h1>TechZone 🎮</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <h2>Crie sua conta</h2>
+      <div class="auth-sub">Cadastre-se para acompanhar pedidos e salvar seus produtos favoritos.</div>
+
+      <form id="register-form" novalidate>
+        <div class="auth-field">
+          <label for="reg-nome">Nome completo</label>
+          <input id="reg-nome" type="text" class="campo" required placeholder="Seu nome completo">
+        </div>
+        <div class="auth-field">
+          <label for="reg-email">E-mail</label>
+          <input id="reg-email" type="email" class="campo" required placeholder="seu@email.com">
+        </div>
+        <div class="auth-field" style="position:relative;">
+          <label for="reg-senha">Senha</label>
+          <input id="reg-senha" type="password" class="campo" required placeholder="Senha">
+          <button type="button" class="show-pass" id="toggle-reg-pass">Mostrar</button>
+        </div>
+        <div class="auth-field" style="position:relative;">
+          <label for="reg-senha-conf">Confirmar senha</label>
+          <input id="reg-senha-conf" type="password" class="campo" required placeholder="Confirmar senha">
+        </div>
+        <label style="display:flex;align-items:center;gap:8px;margin-top:8px;"><input id="reg-termos" type="checkbox"> Aceito os termos e condições</label>
+
+        <div class="auth-error" id="reg-error"></div>
+
+        <button class="botao botao-neon auth-cta" type="submit">Criar Conta</button>
+      </form>
+
+      <div class="auth-footer">Já possui conta? <a href="login.html" class="link-muted">Entrar</a></div>
+    </div>
+  </main>
+
+  <footer class="footer-main">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>TechZone</h4>
+        <p>Especialista em periféricos e equipamentos gamers.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Links Rápidos</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:contato@techzone.com">contato@techzone.com</a><br>(41) 99999-9999</p>
+      </div>
+      <div class="footer-col">
+        <h5>Redes Sociais</h5>
+        <ul class="footer-links footer-socials">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Discord</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechZone Periféricos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

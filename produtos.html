@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TechZone | Produtos</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <h1>TechZone 🎮</h1>
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="produtos.html" class="active">Produtos</a>
+          <a href="carrinho.html">Carrinho</a>
+          <a href="contato.html">Fale Conosco</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="produtos-hero-inner">
+          <div>
+            <h2 class="titulo-secao">Escolha seus Produtos</h2>
+            <p>Encontre os melhores periféricos e equipamentos para montar o setup ideal para jogos, estudos e trabalho.</p>
+          </div>
+
+          <div style="display:flex; gap:12px; align-items:center; justify-content:flex-end;">
+            <a href="carrinho.html" class="botao">Ver Carrinho</a>
+          </div>
+        </div>
+
+        <div class="benefits-row" style="margin-top:14px;">
+          <div class="grid-benefits">
+            <div class="benefit-card">
+              <div class="benefit-emoji">🚚</div>
+              <h4>Entrega Segura</h4>
+              <p>Receba seus produtos com rapidez e segurança.</p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-emoji">🔒</div>
+              <h4>Compra Protegida</h4>
+              <p>Seus dados protegidos durante toda a compra.</p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-emoji">💳</div>
+              <h4>Pagamento Facilitado</h4>
+              <p>Diversas formas de pagamento disponíveis.</p>
+            </div>
+
+            <div class="benefit-card">
+              <div class="benefit-emoji">🛡</div>
+              <h4>Garantia de Qualidade</h4>
+              <p>Produtos selecionados e verificados.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="produtos-controls" style="margin-top:18px; display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+          <div class="search-wrap">
+            <input id="busca-produtos" class="campo" placeholder="Pesquisar produtos..." />
+          </div>
+
+          <div class="filtros-wrap">
+            <div class="filtro-botoes">
+              <button class="filtro-btn active" data-cat="all">Todos</button>
+              <button class="filtro-btn" data-cat="Mouse">Mouse</button>
+              <button class="filtro-btn" data-cat="Teclado">Teclado</button>
+              <button class="filtro-btn" data-cat="Headset">Headset</button>
+              <button class="filtro-btn" data-cat="Monitor">Monitor</button>
+              <button class="filtro-btn" data-cat="Mousepad">Mousepad</button>
+              <button class="filtro-btn" data-cat="SSD">SSD</button>
+              <button class="filtro-btn" data-cat="Cadeira">Cadeira Gamer</button>
+              <button class="filtro-btn" data-cat="PC">Processador</button>
+            </div>
+          </div>
+        </div>
+
+        <section class="container destaque-produtos" style="padding:18px 0 8px;">
+          <h3 class="titulo-secao">Produtos Mais Procurados</h3>
+          <div class="grid-produtos destaque-grid">
+            <!-- Featured items: reuse existing cards visually -->
+            <article class="card-produto destaque" data-nome="Mouse Gamer RGB" data-preco="150.00" data-desconto="0" data-foto="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500" data-cat="Mouse">
+              <span class="badge">🔥 Mais Vendido</span>
+              <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500" alt="Mouse Gamer RGB" />
+              <div class="meta"><div class="categoria">Mouse Gamer</div><div class="rating">⭐⭐⭐⭐⭐ <span class="nota">4.8</span> <span class="count">(127)</span></div></div>
+              <h3>Mouse Gamer RGB</h3>
+              <p>Sensor preciso, iluminação RGB e pegada confortável.</p>
+              <strong>R$ 150,00</strong>
+              <label>Qtd:</label>
+              <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+              <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+            </article>
+
+            <article class="card-produto destaque" data-nome="Teclado Mecânico Pro" data-preco="320.00" data-desconto="0" data-foto="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500" data-cat="Teclado">
+              <span class="badge">⭐ Destaque</span>
+              <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500" alt="Teclado Mecânico Pro" />
+              <div class="meta"><div class="categoria">Teclado</div><div class="rating">⭐⭐⭐⭐☆ <span class="nota">4.6</span> <span class="count">(84)</span></div></div>
+              <h3>Teclado Mecânico Pro</h3>
+              <p>Switches mecânicos, estrutura reforçada e resposta rápida.</p>
+              <strong>R$ 320,00</strong>
+              <label>Qtd:</label>
+              <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+              <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+            </article>
+
+            <article class="card-produto destaque" data-nome="Headset 7.1 Surround" data-preco="450.00" data-desconto="0" data-foto="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500" data-cat="Headset">
+              <span class="badge badge-promo">💰 Promoção</span>
+              <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500" alt="Headset 7.1 Surround" />
+              <div class="meta"><div class="categoria">Headset</div><div class="rating">⭐⭐⭐⭐⭐ <span class="nota">4.9</span> <span class="count">(221)</span></div></div>
+              <h3>Headset 7.1 Surround</h3>
+              <p>Áudio imersivo, microfone dedicado e espuma confortável.</p>
+              <strong>R$ 450,00</strong>
+              <label>Qtd:</label>
+              <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+              <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+            </article>
+          </div>
+        </section>
+
+        <div class="grid-produtos">
+          <article class="card-produto" data-nome="Mouse Gamer RGB" data-preco="150.00" data-desconto="0" data-foto="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500" data-cat="Mouse">
+            <span class="badge">🔥 Mais Vendido</span>
+            <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500" alt="Mouse Gamer RGB" />
+            <div class="meta"><div class="categoria">Mouse Gamer</div><div class="rating">⭐⭐⭐⭐⭐ <span class="nota">4.8</span> <span class="count">(127)</span></div></div>
+            <h3>Mouse Gamer RGB</h3>
+            <p>Sensor preciso, iluminação RGB e pegada confortável.</p>
+            <strong>R$ 150,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+
+          <article class="card-produto" data-nome="Teclado Mecânico Pro" data-preco="320.00" data-desconto="0" data-foto="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500" data-cat="Teclado">
+            <span class="badge">⭐ Destaque</span>
+            <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500" alt="Teclado Mecânico Pro" />
+            <div class="meta"><div class="categoria">Teclado</div><div class="rating">⭐⭐⭐⭐☆ <span class="nota">4.6</span> <span class="count">(84)</span></div></div>
+            <h3>Teclado Mecânico Pro</h3>
+            <p>Switches mecânicos, estrutura reforçada e resposta rápida.</p>
+            <strong>R$ 320,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+
+          <article class="card-produto" data-nome="Headset 7.1 Surround" data-preco="450.00" data-desconto="0" data-foto="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500" data-cat="Headset">
+            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500" alt="Headset 7.1 Surround" />
+            <div class="meta"><div class="categoria">Headset</div><div class="rating">⭐⭐⭐⭐⭐ <span class="nota">4.9</span> <span class="count">(221)</span></div></div>
+            <h3>Headset 7.1 Surround</h3>
+            <p>Áudio imersivo, microfone dedicado e espuma confortável.</p>
+            <strong>R$ 450,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+
+          <article class="card-produto" data-nome="Monitor Gamer 144Hz" data-preco="1200.00" data-desconto="0" data-foto="https://cdn.dooca.store/2624/products/monitor-gamer-led-asus-tuf-gaming-27-full-hd-ips-hdmi-displayport-freesync-144hz-1ms-vg279q1r-1594665333-gg_620x620+fill_ffffff.jpg?v=1657052681" data-cat="Monitor">
+            <img src="https://cdn.dooca.store/2624/products/monitor-gamer-led-asus-tuf-gaming-27-full-hd-ips-hdmi-displayport-freesync-144hz-1ms-vg279q1r-1594665333-gg_620x620+fill_ffffff.jpg?v=1657052681" alt="Monitor Gamer 144Hz" />
+            <div class="meta"><div class="categoria">Monitor</div><div class="rating">⭐⭐⭐⭐☆ <span class="nota">4.5</span> <span class="count">(64)</span></div></div>
+            <h3>Monitor Gamer 144Hz</h3>
+            <p>Tela fluida para jogos competitivos e imagens nítidas.</p>
+            <strong>R$ 1.200,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+
+          <article class="card-produto" data-nome="Mousepad Speed Extended" data-preco="80.00" data-desconto="0" data-foto="https://us.maxgaming.com/bilder/artiklar/21321.jpg?m=1648810460" data-cat="Mousepad">
+            <img src="https://us.maxgaming.com/bilder/artiklar/21321.jpg?m=1648810460" alt="Mousepad Speed Extended" />
+            <div class="meta"><div class="categoria">Mousepad</div><div class="rating">⭐⭐⭐⭐☆ <span class="nota">4.4</span> <span class="count">(39)</span></div></div>
+            <h3>Mousepad Speed Extended</h3>
+            <p>Superfície ampla para teclado e mouse, com base antiderrapante.</p>
+            <strong>R$ 80,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+
+          <article class="card-produto" data-nome="Cadeira Gamer Ergonomica" data-preco="950.00" data-desconto="0" data-foto="https://images.unsplash.com/photo-1670946839270-cc4febd43b09?auto=format&fit=crop&w=500&q=80" data-cat="Cadeira">
+            <span class="badge badge-new">🆕 Novo</span>
+            <img src="https://images.unsplash.com/photo-1670946839270-cc4febd43b09?auto=format&fit=crop&w=500&q=80" alt="Cadeira Gamer Ergonômica" />
+            <div class="meta"><div class="categoria">Cadeira Gamer</div><div class="rating">⭐⭐⭐⭐☆ <span class="nota">4.3</span> <span class="count">(21)</span></div></div>
+            <h3>Cadeira Gamer Ergonômica</h3>
+            <p>Conforto para longas sessões, apoio lombar e visual gamer.</p>
+            <strong>R$ 950,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+
+          <article class="card-produto" data-nome="SSD NVMe 1TB" data-preco="620.00" data-desconto="0" data-foto="https://http2.mlstatic.com/D_NQ_NP_2X_702404-MLA110131209039_042026-F.webp" data-cat="SSD">
+            <img src="https://http2.mlstatic.com/D_NQ_NP_2X_702404-MLA110131209039_042026-F.webp" alt="SSD NVMe 1TB" />
+            <div class="meta"><div class="categoria">SSD</div><div class="rating">⭐⭐⭐⭐⭐ <span class="nota">4.9</span> <span class="count">(58)</span></div></div>
+            <h3>SSD NVMe 1TB</h3>
+            <p>Armazenamento ultrarrápido para inicializações e jogos instantâneos.</p>
+            <strong>R$ 620,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+
+          <article class="card-produto" data-nome="Processador Intel Core i9" data-preco="1899.00" data-desconto="0" data-foto="https://cdn-hardstore.s3-sa-east-1.amazonaws.com/28783/1280x960/1.webp" data-cat="PC">
+            <img src="https://cdn-hardstore.s3-sa-east-1.amazonaws.com/28783/1280x960/1.webp" alt="Processador Intel Core i9" />
+            <div class="meta"><div class="categoria">Processador</div><div class="rating">⭐⭐⭐⭐⭐ <span class="nota">4.8</span> <span class="count">(103)</span></div></div>
+            <h3>Processador Intel Core i9</h3>
+            <p>Processador de alto desempenho para gaming e produção profissional de conteúdo.</p>
+            <strong>R$ 1.899,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+
+          <article class="card-produto" data-nome="PC Gamer Completo" data-preco="4599.00" data-desconto="0" data-foto="https://tec8.com.br/wp-content/uploads/2025/09/sdl-sanjaya-2rqomzlvxhc-unsplash_zzjn-1024x576.jpg" data-cat="PC">
+            <img src="https://tec8.com.br/wp-content/uploads/2025/09/sdl-sanjaya-2rqomzlvxhc-unsplash_zzjn-1024x576.jpg" alt="PC Gamer Completo" />
+            <div class="meta"><div class="categoria">PC Gamer</div><div class="rating">⭐⭐⭐⭐⭐ <span class="nota">4.7</span> <span class="count">(71)</span></div></div>
+            <h3>PC Gamer Completo</h3>
+            <p>Setup completo com processador high-end, GPU RTX 4080 e 32GB RAM para máximo desempenho.</p>
+            <strong>R$ 4.599,00</strong>
+            <label>Qtd:</label>
+            <input type="number" class="campo produto-qtd" value="1" min="1" max="4" />
+            <button class="botao btn-adicionar-card">Adicionar ao Carrinho</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="depoimentos container">
+        <h3>O que nossos clientes dizem</h3>
+        <div class="decor-line small"></div>
+        <div class="grid-depoimentos">
+          <blockquote class="depo-card">
+            <div class="stars">★★★★★</div>
+            <p>"Produtos excelentes e entrega rápida."</p>
+            <cite>— Rafael Oliveira</cite>
+          </blockquote>
+
+          <blockquote class="depo-card">
+            <div class="stars">★★★★★</div>
+            <p>"Ótima qualidade e atendimento."</p>
+            <cite>— Juliana Santos</cite>
+          </blockquote>
+
+          <blockquote class="depo-card">
+            <div class="stars">★★★★★</div>
+            <p>"Minha primeira escolha para montar setups gamers."</p>
+            <cite>— Felipe Costa</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="cta container">
+        <div class="cta-box">
+          <h3>Pronto para melhorar seu setup?</h3>
+          <p>Explore nosso catálogo e encontre os melhores equipamentos para elevar sua experiência.</p>
+          <a href="produtos.html" class="cta-botao">Continuar Comprando</a>
+        </div>
+      </section>
+
+      <footer class="footer-main">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h4>TechZone</h4>
+            <p>Especialista em periféricos e equipamentos gamers.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Links Rápidos</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="produtos.html">Produtos</a></li>
+              <li><a href="carrinho.html">Carrinho</a></li>
+              <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contato</h5>
+            <p><a href="mailto:contato@techzone.com">contato@techzone.com</a><br />(41) 99999-9999</p>
+          </div>
+          <div class="footer-col">
+            <h5>Redes Sociais</h5>
+            <ul class="footer-links footer-socials">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">YouTube</a></li>
+              <li><a href="#">Discord</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 TechZone Periféricos. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+
+      <div id="floating-cart" class="floating-cart">
+        <button id="floating-cart-btn" class="botao">🛒 Carrinho <span id="floating-count">0</span></button>
+        <div id="floating-summary" class="floating-summary escondido">
+          <div id="floating-items"></div>
+          <a href="carrinho.html" class="botao" style="width:100%; margin-top:10px;">Ver Carrinho</a>
+        </div>
+      </div>
+    </main>
+    <script src="js/sobre.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

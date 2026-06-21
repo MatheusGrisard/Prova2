@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TechZone | Seu Carrinho</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <h1>TechZone 🎮</h1>
+        <nav>
+          <a href="index.html">Início</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="carrinho.html" class="active">Carrinho</a>
+          <a href="contato.html">Fale Conosco</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="container">
+        <h2 class="titulo-secao">Itens no seu Carrinho</h2>
+        <p>Confira seus periféricos selecionados e finalize seu pedido com confiança.</p>
+
+        <div class="cart-wrap">
+          <div class="cart-main">
+            <div id="carrinho-vazio" class="cart-empty">
+              <div class="cart-empty-icon">🛒</div>
+              <h3>Seu carrinho está vazio</h3>
+              <p>Ainda não há produtos adicionados ao carrinho.</p>
+              <a href="produtos.html" class="botao btn-primary">Explorar Produtos</a>
+            </div>
+
+            <div id="cart-content" class="cart-content">
+              <div class="cart-table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Produto</th>
+                      <th>Preço</th>
+                      <th>Qtd</th>
+                      <th>Total</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="tabela-produtos"></tbody>
+                </table>
+              </div>
+
+              <div class="card-recomendados">
+                <div class="recomendados-header">
+                  <h3>Produtos Recomendados</h3>
+                  <span>Não fique sem o equipamento ideal</span>
+                </div>
+                <div class="grid-recomendados" id="recomendados-list">
+                  <article class="card-produto recomendado">
+                    <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500" alt="Mouse Gamer RGB" />
+                    <div>
+                      <h4>Mouse Gamer RGB</h4>
+                      <span>R$ 150,00</span>
+                    </div>
+                    <a href="produtos.html" class="botao btn-small">Adicionar ao Carrinho</a>
+                  </article>
+                  <article class="card-produto recomendado">
+                    <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?w=500" alt="Teclado Mecânico Pro" />
+                    <div>
+                      <h4>Teclado Mecânico Pro</h4>
+                      <span>R$ 320,00</span>
+                    </div>
+                    <a href="produtos.html" class="botao btn-small">Adicionar ao Carrinho</a>
+                  </article>
+                  <article class="card-produto recomendado">
+                    <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=500" alt="Headset 7.1 Surround" />
+                    <div>
+                      <h4>Headset 7.1 Surround</h4>
+                      <span>R$ 450,00</span>
+                    </div>
+                    <a href="produtos.html" class="botao btn-small">Adicionar ao Carrinho</a>
+                  </article>
+                  <article class="card-produto recomendado">
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500" alt="Monitor Gamer 144Hz" />
+                    <div>
+                      <h4>Monitor Gamer 144Hz</h4>
+                      <span>R$ 1.200,00</span>
+                    </div>
+                    <a href="produtos.html" class="botao btn-small">Adicionar ao Carrinho</a>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="cart-side">
+            <div class="cart-side-box summary-box">
+              <div class="summary-header">
+                <h4>Resumo do Pedido</h4>
+                <p>Revise rapidamente os valores antes do checkout.</p>
+              </div>
+
+              <div class="resumo-valores summary-glass">
+                <div class="linha-resumo"><span>Subtotal</span><span id="subtotal-carrinho">R$ 0.00</span></div>
+                <div class="linha-resumo"><span>Frete</span><span id="frete-carrinho">R$ 0.00</span></div>
+                <div class="linha-resumo"><span>Descontos</span><span id="desconto-carrinho">R$ 0.00</span></div>
+                <div class="divider"></div>
+                <div class="linha-resumo total"><span>Total</span><span id="valor-total-carrinho">R$ 0.00</span></div>
+              </div>
+
+              <button id="btn-finalizar" class="botao botao-finalizar" disabled title="Adicione produtos ao carrinho para continuar.">Finalizar compra</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-main">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h4>TechZone</h4>
+          <p>Especialista em periféricos e equipamentos gamers.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Links Rápidos</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="carrinho.html">Carrinho</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <p><a href="mailto:contato@techzone.com">contato@techzone.com</a><br />(41) 99999-9999</p>
+        </div>
+        <div class="footer-col">
+          <h5>Redes Sociais</h5>
+          <ul class="footer-links footer-socials">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 TechZone Periféricos. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="js/calcula-total.js"></script>
+    <script src="js/form.js"></script>
+     <script src="js/auth.js"></script>
+  </body>
+</html>

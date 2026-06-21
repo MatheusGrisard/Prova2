@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>TechZone | Entrar</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <div class="container-header">
+        <h1>TechZone 🎮</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <h2>Entrar na sua conta</h2>
+      <div class="auth-sub">Acesse sua conta para acompanhar pedidos e salvar seus produtos favoritos.</div>
+
+      <form id="login-form" novalidate>
+        <div class="auth-field">
+          <label for="login-email">E-mail</label>
+          <div style="position:relative">
+            <input id="login-email" type="email" class="campo" required placeholder="seu@email.com">
+          </div>
+        </div>
+
+        <div class="auth-field">
+          <label for="login-senha">Senha</label>
+          <div style="position:relative">
+            <input id="login-senha" type="password" class="campo" required placeholder="Senha">
+            <button type="button" class="show-pass" id="toggle-pass">Mostrar</button>
+          </div>
+        </div>
+
+        <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+          <label style="display:flex;align-items:center;gap:8px;"><input type="checkbox" id="login-remember"> Lembrar-me</label>
+          <a href="#" class="link-muted">Esqueci minha senha</a>
+        </div>
+
+        <div class="auth-error" id="login-error"></div>
+
+        <button class="botao botao-neon auth-cta" type="submit">Entrar</button>
+      </form>
+
+      <div class="auth-footer">Não possui uma conta? <a href="register.html" class="link-muted">Cadastre-se</a></div>
+    </div>
+  </main>
+
+  <footer class="footer-main">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>TechZone</h4>
+        <p>Especialista em periféricos e equipamentos gamers.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Links Rápidos</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="carrinho.html">Carrinho</a></li>
+          <li><a href="contato.html">Fale Conosco</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <p><a href="mailto:contato@techzone.com">contato@techzone.com</a><br>(41) 99999-9999</p>
+      </div>
+      <div class="footer-col">
+        <h5>Redes Sociais</h5>
+        <ul class="footer-links footer-socials">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Discord</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 TechZone Periféricos. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
